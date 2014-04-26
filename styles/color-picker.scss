@@ -1,0 +1,129 @@
+@import "mixins";
+
+.color-item{
+  cursor: pointer;
+
+  color: #c88673;
+  color: #bd8975;
+  color: #8a8480;
+  color: #d3bba5;
+  color: #efe3b5;
+  color: #d1d0ce;
+  color: #d5c0b1;
+  color: #dccda5;
+  color: #f1eedd;
+  color: #cddab9;
+  color: #f4f4e9;
+  color: #e9d195;
+  color: #adbee1;
+  color: #f4f4f4;
+  color: #f4d2af;
+  color: #b7afa9;
+  color: #d5a27d;
+  color: #eac67e;
+  color: #dccda5;
+  color: #f4edc5;
+  color: #f3e2b3;
+  color: #d6c5a5;
+  color: #e9beb8;
+  color: #d7d8c3;
+}
+
+.photo{
+  position: relative;
+  overflow: hidden;
+  img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .svg-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+}
+
+ul.render-items{
+  margin: 0;
+  width: 100%;
+  @include vendor(transform, translateZ(0));
+  li{
+    list-style: none;
+    cursor: pointer;
+    display: block;
+    @include transition(transform 0.2s);
+  }
+
+}
+
+.render-colour{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background: grey;
+  float: left;
+  &:hover{
+    @include vendor(transform, scale(1.1) translateZ(0));
+  }
+}
+
+.render-finish{
+  width: 100%;
+  height: 65px;
+  background: grey;
+  margin-bottom: 5px;
+  &:hover{
+    @include vendor(transform, scale(1.05) translateZ(0));
+  }
+}
+
+.preview{
+  width: 100%;
+  height: 100px;
+  background: grey;
+}
+
+.images{
+  overflow: scroll;
+  width: 100%;
+  height: 100px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  div{
+    height: 100%;
+    width: 100px;
+    margin-right: 15px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    cursor: pointer;
+    @include transition(transform 0.3s)
+  }
+  div.selected{
+    @include vendor(transform, scale(0.9));
+  }
+}
+/*
+  Slider
+*/
+//
+//.slider{
+//  width: 100%;
+//  div{
+//    width: 250px;
+//    height: 50px;
+//    margin-right: 50px;
+//    background: grey;
+//  }
+//  div.slick-center{
+//    -webkit-transform: scale(1.01);
+//  }
+//}
