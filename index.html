@@ -24,8 +24,6 @@
   ================================================== -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/skeleton.css">
-    <!--<link rel="stylesheet" href="styles/style.css">-->
-    <link rel="stylesheet" href="styles/slick.css">
     <link rel="stylesheet" href="styles/color-picker.css">
     <link rel="stylesheet" href="styles/layout.css">
 
@@ -75,6 +73,7 @@
 
         <div class="six columns alpha">
             <strong>Preview</strong>
+
             <div class="six columns alpha">
 
                 <div class="preview three columns alpha" style="background-color: {{currentColor.code}}">
@@ -83,6 +82,7 @@
                 </div>
                 <div class="info three columns omega">
                     <p>{{currentColor.name}}</p>
+
                     <p>{{currentTexture.name}}</p>
                 </div>
             </div>
@@ -113,32 +113,35 @@
     <div class="seven columns">
 
         <div class="images">
-            <div ng-repeat="image in images" ng-click="choseImage(image)" class="{{image.selected}}" style="background-image: url('images/{{image.name}}')"></div>
+            <div ng-repeat="image in images" ng-click="choseImage(image)" class="{{image.selected}}"
+                 style="background-image: url('images/{{image.name}}')"></div>
         </div>
         <div class="photo">
             <img src="images/{{currentImage.name}}" alt="1"/>
 
             <div class="svg-container">
-                <svg x="0px" y="0px" style="" vbox="0 0 {{currentImage.width}} {{currentImage.height}}">
-                    <defs>
-                        <pattern id="acrylic" x="0" y="0" patternUnits="userSpaceOnUse" height="20" width="20">
-                            <image x="0" y="0" xlink:href="images/acrylic.jpg" width="300" height="300"></image>
-                        </pattern>
-                        <pattern id="mineral" x="0" y="0" patternUnits="userSpaceOnUse" height="100" width="100">
-                            <image x="0" y="0" xlink:href="images/mineral.jpg" width="534" height="400"></image>
-                        </pattern>
-                        <pattern id="monocouche" x="0" y="0" patternUnits="userSpaceOnUse" height="20" width="20">
-                            <image x="0" y="0" xlink:href="images/monocouche.jpg" width="260" height="194"></image>
-                        </pattern>
-                    </defs>
-                    <path opacity="0.3" fill="url(#{{currentTexture.file}})"
-                          d="{{currentImage.overlayPath}}"/>
+                <object>
+                    <svg x="0px" y="0px" style="" vbox="0 0 {{currentImage.width}} {{currentImage.height}}">
+                        <defs>
+                            <pattern id="acrylic" x="0" y="0" patternUnits="userSpaceOnUse" height="20" width="20">
+                                <image x="0" y="0" xlink:href="images/acrylic.jpg" width="300" height="300"></image>
+                            </pattern>
+                            <pattern id="mineral" x="0" y="0" patternUnits="userSpaceOnUse" height="100" width="100">
+                                <image x="0" y="0" xlink:href="images/mineral.jpg" width="534" height="400"></image>
+                            </pattern>
+                            <pattern id="monocouche" x="0" y="0" patternUnits="userSpaceOnUse" height="20" width="20">
+                                <image x="0" y="0" xlink:href="images/monocouche.jpg" width="260" height="194"></image>
+                            </pattern>
+                        </defs>
+                        <path opacity="0.3" fill="url(#{{currentTexture.file}})"
+                              d="{{currentImage.overlayPath}}"/>
 
-                    <path opacity="0.6" fill="{{currentColor.code}}"
-                          d="{{currentImage.overlayPath}}"/>
+                        <path opacity="0.6" fill="{{currentColor.code}}"
+                              d="{{currentImage.overlayPath}}"/>
 
-                </svg>
+                    </svg>
 
+                </object>
             </div>
         </div>
 
@@ -170,8 +173,6 @@
 
 <!-- scripts -->
 <script src="scripts/jquery.min.js"></script>
-<script src="scripts/slick.js"></script>
-<script src="scripts/scripts.js"></script>
 <script src="scripts/angular.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
