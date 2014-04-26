@@ -157,9 +157,8 @@ ul.render-items {
 object {
   width: 100%;
   display: block;
-  height: auto;
-  position: relative;
-  padding-top: 100%; }
+  height: 100%;
+  position: relative; }
 
 svg {
   width: 100%;
