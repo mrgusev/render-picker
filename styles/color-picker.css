@@ -63,7 +63,7 @@ Use:
   color: #d6c5a5;
   color: #e9beb8;
   color: #d7d8c3;
-  color: rgba(179, 109, 91, 0.6);
+  color: rgba(81, 41, 41, 0.6);
   color: rgba(166, 113, 94, 0.6);
   color: rgba(114, 108, 105, 0.6);
   color: rgba(192, 166, 140, 0.6);
@@ -112,6 +112,7 @@ ul.render-items {
   -o-transform: translateZ(0);
   transform: translateZ(0); }
   ul.render-items li {
+    padding: 0;
     list-style: none;
     cursor: pointer;
     display: block;
@@ -119,10 +120,12 @@ ul.render-items {
     -moz-transition: -moz-transform 0.2s;
     -o-transition: -o-transform 0.2s;
     transition: transform 0.2s; }
+  ul.render-items li:nth-child(4n) {
+    margin-right: 0; }
 
 .render-colour {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   margin-right: 5px;
   margin-bottom: 5px;
   background: grey;
@@ -136,7 +139,7 @@ ul.render-items {
 
 .render-finish {
   width: 100%;
-  height: 65px;
+  height: 75px;
   background: grey;
   margin-bottom: 5px; }
   .render-finish:hover {
@@ -146,10 +149,28 @@ ul.render-items {
     -o-transform: scale(1.05) translateZ(0);
     transform: scale(1.05) translateZ(0); }
 
+.space-bottom {
+  margin-bottom: 15px; }
+
+.space-right {
+  margin-right: 5px; }
+
 .preview {
   width: 100%;
   height: 100px;
   background: grey; }
+
+.btn {
+  background: #6cbd32;
+  color: #fff;
+  border: 0px;
+  padding: 8px 15px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: auto;
+  font-weight: bold; }
 
 .images {
   overflow: scroll;
@@ -190,6 +211,17 @@ svg {
   position: absolute;
   top: 0;
   left: 0; }
+
+.enquiry-form label {
+  float: none; }
+.enquiry-form input[type="text"], .enquiry-form input[type="email"], .enquiry-form input[type="tel"] {
+  float: none;
+  width: 95%; }
+.enquiry-form input[type="radio"] {
+  float: left; }
+
+.left {
+  float: left !important; }
 
 /*
   Slider
