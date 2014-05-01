@@ -259,10 +259,14 @@
 
                     <div class="six columns alpha">
 
-                        <div class="preview three columns alpha"
-                             style="background-color: {{currentColor.background}}">
-                            <div style="height: 100%; opacity: 0.6; background-image: url('images/{{currentTexture.file}}.jpg')"></div>
+                        <div class="three columns alpha">
+                            <div class="space-bottom" style="height: 100px; background-color: {{currentColor.background}}; background-size: cover; opacity: 0.6; background-image: url('images/{{currentTexture.file}}.jpg')"></div>
 
+                            <div class="info">
+                                Color: {{currentColor.name}}
+                                <br/>
+                                Finish: {{currentTexture.name}}
+                            </div>
                         </div>
                         <div class="three columns omega">
                             <form class="enquiry-form">
@@ -288,11 +292,7 @@
                                 <button type="submit" class="btn">Send enquiry</button>
                             </form>
                         </div>
-                        <!--<div class="info three columns omega">-->
-                        <!--<p>{{currentColor.name}}</p>-->
 
-                        <!--<p>{{currentTexture.name}}</p>-->
-                        <!--</div>-->
                     </div>
 
                 </div>
@@ -313,9 +313,9 @@
                         <object>
                             <svg x="0px" y="0px" style="" vbox="0 0 {{currentImage.width}} {{currentImage.height}}">
                                 <defs>
-                                    <pattern id="acrylic" x="0" y="0" patternUnits="userSpaceOnUse" height="20"
+                                    <pattern id="thin" x="0" y="0" patternUnits="userSpaceOnUse" height="20"
                                              width="20">
-                                        <image x="0" y="0" xlink:href="images/acrylic.jpg" width="300"
+                                        <image x="0" y="0" xlink:href="images/thin.jpg" width="300"
                                                height="300"></image>
                                     </pattern>
                                     <pattern id="mineral" x="0" y="0" patternUnits="userSpaceOnUse" height="100"

@@ -139,9 +139,10 @@ ul.render-items {
 
 .render-finish {
   width: 100%;
-  height: 75px;
+  height: 63px;
   background: grey;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  background-size: cover; }
   .render-finish:hover {
     -webkit-transform: scale(1.05) translateZ(0);
     -moz-transform: scale(1.05) translateZ(0);
@@ -154,11 +155,6 @@ ul.render-items {
 
 .space-right {
   margin-right: 5px; }
-
-.preview {
-  width: 100%;
-  height: 100px;
-  background: grey; }
 
 .btn {
   background: #6cbd32;

@@ -3,45 +3,45 @@
 angular.module('buildingColorApp')
     .controller('MainCtrl', function ($scope) {
         $scope.colors = [
-                  { id: 1,  name: 'African Ivory',          background:'#f1edd9', code: 'hsla(49, 31%, 86%, 0.60)'},
-            { id: 2,  name: 'Antique White',          background:'#f4f4e7', code: 'hsla(60, 23%, 89%, 0.60)'},
-            { id: 3,  name: 'Blue Sky',               background:'#a0b1dd', code: 'hsla(224, 39%, 71%, 0.60)'},
-            { id: 4,  name: 'Butter Cream',           background:'#f4ecbb', code: 'hsla(51, 56%, 81%, 0.60)'},
-            { id: 5,  name: 'Chalk White',            background:'#f4f4f4', code: 'hsla(0, 0%, 91%, 0.60)'},
-            { id: 6,  name: 'Dusk and Dawn',          background:'#e6be6b', code: 'hsla(40, 62%, 64%, 0.60)'},
-            { id: 7,  name: 'Earth Taupe',            background:'#caaf95', code: 'hsla(29, 28%, 66%, 0.60)'},
-            { id: 8,  name: 'Fired Copper',           background:'#ce936b', code: 'hsla(24, 44%, 59%, 0.60)'},
-            { id: 9,  name: 'Fired Earth',            background:'#bc7362', code: 'hsla(11, 36%, 54%, 0.60)'},
-            { id: 10, name: 'Mallow Rose',            background:'#ceb5a3', code: 'hsla(25, 25%, 69%, 0.60)'},
-            { id: 11, name: 'Mint Green',             background:'#c3d6ab', code: 'hsla(86, 28%, 72%, 0.60)'},
-            { id: 12, name: 'Moon Stone',             background:'#c9c8c4', code: 'hsla(45, 3%, 74%, 0.60)'},
-            { id: 13, name: 'Mountain Grey',          background:'#aaa299', code: 'hsla(28, 7%, 61%, 0.60)'},
-            { id: 14, name: 'Old Gold',               background:'#e5ca85', code: 'hsla(43, 55%, 68%, 0.60)'},
-            { id: 15, name: 'Orchard Pink',           background:'#e5afac', code: 'hsla(1, 41%, 75%, 0.60)'},
-            { id: 16, name: 'Platinum Metal',         background:'#79726e', code: 'hsla(18, 4%, 44%, 0.60)'},
-            { id: 17, name: 'Red Sandstone',          background:'#b27663', code: 'hsla(14, 30%, 52%, 0.60)'},
-            { id: 18, name: 'Sand Dune',              background:'#eee0a8', code: 'hsla(47, 54%, 76%, 0.60)'},
-            { id: 19, name: 'Sea Mist',               background:'#acd4de', code: 'hsla(192, 36%, 74%, 0.60)'},
-            { id: 20, name: 'Travertine Stone',       background:'#f1dda7', code: 'hsla(43, 58%, 77%, 0.60)'}
+                  { id: 1,  name: 'African Ivory',          background:'#f1edd9', code: 'hsl(49, 31%, 86%)'},
+            { id: 2,  name: 'Antique White',          background:'#f4f4e7', code: 'hsl(60, 23%, 89%)'},
+            { id: 3,  name: 'Blue Sky',               background:'#a0b1dd', code: 'hsl(224, 39%, 71%)'},
+            { id: 4,  name: 'Butter Cream',           background:'#f4ecbb', code: 'hsl(51, 56%, 81%)'},
+            { id: 5,  name: 'Chalk White',            background:'#f4f4f4', code: 'hsl(0, 0%, 91%)'},
+            { id: 6,  name: 'Dusk and Dawn',          background:'#e6be6b', code: 'hsl(40, 62%, 64%)'},
+            { id: 7,  name: 'Earth Taupe',            background:'#caaf95', code: 'hsl(29, 28%, 66%)'},
+            { id: 8,  name: 'Fired Copper',           background:'#ce936b', code: 'hsl(24, 44%, 59%)'},
+            { id: 9,  name: 'Fired Earth',            background:'#bc7362', code: 'hsl(11, 36%, 54%)'},
+            { id: 10, name: 'Mallow Rose',            background:'#ceb5a3', code: 'hsl(25, 25%, 69%)'},
+            { id: 11, name: 'Mint Green',             background:'#c3d6ab', code: 'hsl(86, 28%, 72%)'},
+            { id: 12, name: 'Moon Stone',             background:'#c9c8c4', code: 'hsl(45, 3%, 74%)'},
+            { id: 13, name: 'Mountain Grey',          background:'#aaa299', code: 'hsl(28, 7%, 61%)'},
+            { id: 14, name: 'Old Gold',               background:'#e5ca85', code: 'hsl(43, 55%, 68%)'},
+            { id: 15, name: 'Orchard Pink',           background:'#e5afac', code: 'hsl(1, 41%, 75%)'},
+            { id: 16, name: 'Platinum Metal',         background:'#79726e', code: 'hsl(18, 4%, 44%)'},
+            { id: 17, name: 'Red Sandstone',          background:'#b27663', code: 'hsl(14, 30%, 52%)'},
+            { id: 18, name: 'Sand Dune',              background:'#eee0a8', code: 'hsl(47, 54%, 76%)'},
+            { id: 19, name: 'Sea Mist',               background:'#acd4de', code: 'hsl(192, 36%, 74%)'},
+            { id: 20, name: 'Travertine Stone',       background:'#f1dda7', code: 'hsl(43, 58%, 77%)'}
         ];
         $scope.textures = [
             {
-                name: 'monocouche',
+                name: 'Monocouche',
                 file: 'monocouche',
-                width: 260,
-                height: 194
+                width: 1000,
+                height: 1000
             },
             {
-                name: 'acrylic thin coat render',
-                file: 'acrylic',
-                width: 300,
-                height: 300
+                name: 'Thin coat render',
+                file: 'thin',
+                width: 1000,
+                height: 667
             },
             {
-                name: 'Mineral Thin Coat Render ',
+                name: 'Mineral thin coat render ',
                 file: 'mineral',
-                width: 534,
-                height: 400
+                width: 1000,
+                height: 667
             }
         ];
         $scope.images = [
