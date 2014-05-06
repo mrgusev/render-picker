@@ -211,28 +211,6 @@
 </div>
 <div class="content-wrap">
     <div id="content" class="clearfix">
-        <!--<div class="colL2">-->
-        <!--<h2 class="arrow"><a href="http://www.ecorend.co.uk/products.html" title="">Products<em></em></a>-->
-        <!--</h2>-->
-
-        <!--<div id="headerShadow">&nbsp;</div>-->
-
-        <!--<ul id="sub-nav">-->
-        <!--<li class="sectionTab"><a href="http://www.ecorend.co.uk/products.html" title="Products">Products</a>-->
-        <!--</li>-->
-        <!--<li class="active"><a href="./Primers & Adhesives_files/Primers & Adhesives.html"-->
-        <!--title="Primers &amp; Adhesives">Primers &amp; Adhesives</a></li>-->
-        <!--<li><a href="http://www.ecorend.co.uk/products/base-coats.html" title="Base Coats">Base Coats</a></li>-->
-        <!--<li><a href="http://www.ecorend.co.uk/products/through-coloured-finishes.html"-->
-        <!--title="Through Coloured Finishes">Through Coloured Finishes</a></li>-->
-        <!--<li class="last"><a href="http://www.ecorend.co.uk/products/masonry-paint-and-textured-coatings.html"-->
-        <!--title="Masonry Paint &amp; Textured Coatings">Masonry Paint &amp; Textured-->
-        <!--Coatings</a></li>-->
-
-        <!--</ul>-->
-
-        <!--</div>-->
-        <!--<div class="colR">-->
         <div class="container" ng-controller="MainCtrl">
             <div class="sixteen columns">
                 <h1 class="remove-bottom" style="margin-top: 40px">External Finish Picker</h1>
@@ -242,14 +220,14 @@
                     <strong>Render color</strong>
                     <ul class="render-items">
                         <li class="render-colour" ng-click="choseColor(color)"
-                            style="background: {{color.background}}" ng-repeat="color in colors"></li>
+                            ng-style="{background: color.background}" ng-repeat="color in colors"></li>
                     </ul>
                 </div>
                 <div class="three columns omega">
                     <strong>Render finish</strong>
                     <ul class="render-items">
                         <li class="render-finish" ng-click="choseTexture(texture)"
-                            style="background-image: url('images/{{texture.file}}.jpg')"
+                            ng-style="{'background-image': 'url(\'images/' + texture.file + '.jpg\')'}"
                             ng-repeat="texture in textures"></li>
                     </ul>
                 </div>
@@ -260,8 +238,10 @@
                     <div class="six columns alpha">
 
                         <div class="three columns alpha">
-                            <div class="space-bottom"   style="height: 100px;  opacity: 1; background-color: {{currentColor.background}};">
-                                <div style="height: 100%; background-size: cover; opacity: 0.3; background-image: url('images/{{currentTexture.file}}.jpg')">
+                            <div class="space-bottom"
+                                 ng-style="{height: '100px', opacity: 1, 'background-color': currentColor.background}">
+                                <div ng-style="{height: '100%', 'background-size': 'cover',
+                                    opacity: 0.3, 'background-image': 'url(\'images/' + currentTexture.file + '.jpg\')'}">
 
                                 </div>
                             </div>
@@ -326,11 +306,11 @@
                                         <image x="0" y="0" xlink:href="images/monocouche.jpg" width="100" height="100"></image>
                                     </pattern>
                                 </defs>
-                                <path opacity="0.3" fill="url(#{{currentTexture.file}})"
-                                      d="{{currentImage.overlayPath}}"/>
+                                <path opacity="0.3" ng-attr-fill="url(#{{currentTexture.file}})"
+                                      ng-attr-d="{{currentImage.overlayPath}}"/>
 
-                                <path opacity="0.7" fill="{{currentColor.code}}"
-                                      d="{{currentImage.overlayPath}}"/>
+                                <path opacity="0.7" ng-attr-fill="{{currentColor.code}}"
+                                      ng-attr-d="{{currentImage.overlayPath}}"/>
 
                             </svg>
 
