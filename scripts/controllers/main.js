@@ -43,7 +43,9 @@ angular.module('buildingColorApp', [ 'uiSlider'])
             $scope.currentImage = $scope.images[0];
             $scope.currentImage.selected = 'selected';
             $timeout(function(){
-                $( '#carousel' ).elastislide();
+                var car = $( '#carousel' );
+                car.elastislide();
+                car.add();
             }, 100);
         });
 
