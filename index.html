@@ -13,360 +13,92 @@
     <title>Primers &amp; Adhesives</title>
     <!--<base href="http://www.ecorend.co.uk/">-->
     <base href=".">
-    <!--<base href="http://ecorend.electra-1.titaninternet.co.uk/" />-->
-    <link rel="shortcut icon" href="http://www.ecorend.co.uk/favicon.ico">
-    <link rel="stylesheet" href="http://www.ecorend.co.uk/css/base.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./Primers & Adhesives_files/jquery.fancybox-1.3.1.css" media="screen">
-
     <!--<link rel="stylesheet" href="styles/base.css">-->
     <link rel="stylesheet" href="styles/skeleton.css">
     <link rel="stylesheet" href="styles/color-picker.css">
+    <link rel="stylesheet" href="styles/elastislide.css">
+    <link rel="stylesheet" type="text/css" href="styles/angular-slider.css">
 
-    <script src="scripts/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles/custom.css">
+
+    <script src="scripts/modernizr.custom.17475.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="scripts/jquerypp.custom.js" type="text/javascript"></script>
+    <script src="scripts/jquery.elastislide.js" type="text/javascript"></script>
+
     <script src="scripts/angular.js" type="text/javascript"></script>
+    <script src="scripts/angular-slider.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
     <script src="scripts/controllers/main.js" type="text/javascript"></script>
-
-    <script type="text/javascript" async="" src="./Primers & Adhesives_files/ga.js"></script>
-    <script type="text/javascript" src="./Primers & Adhesives_files/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="./Primers & Adhesives_files/jquery.cycle.all.min.js"></script>
-    <script type="text/javascript" src="./Primers & Adhesives_files/jquery.mousewheel-3.0.2.pack.js"></script>
-    <script type="text/javascript" src="./Primers & Adhesives_files/jquery.fancybox-1.3.1.js"></script>
-    <script type="text/javascript" src="./Primers & Adhesives_files/cufon-yui.js"></script>
-    <style type="text/css">cufon {
-        text-indent: 0 !important;
-    }
-
-    @media screen, projection {
-        cufon {
-            display: inline !important;
-            display: inline-block !important;
-            position: relative !important;
-            vertical-align: middle !important;
-            font-size: 1px !important;
-            line-height: 1px !important;
-        }
-
-        cufon cufontext {
-            display: -moz-inline-box !important;
-            display: inline-block !important;
-            width: 0 !important;
-            height: 0 !important;
-            overflow: hidden !important;
-            text-indent: -10000in !important;
-        }
-
-        cufon canvas {
-            position: relative !important;
-        }
-    }
-
-    @media print {
-        cufon {
-            padding: 0 !important;
-        }
-
-        cufon canvas {
-            display: none !important;
-        }
-    }</style>
-    <script type="text/javascript" src="./Primers & Adhesives_files/HelveNeuBolExt.font.js"></script>
-    <script type="text/javascript" src="./Primers & Adhesives_files/HelveNeuBol.font.js"></script>
-    <script type="text/javascript" src="./Primers & Adhesives_files/cufon_styles.js"></script>
-    <script type="text/javascript" src="./Primers & Adhesives_files/dd_roundies.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("a.large_image").fancybox();
-        })
-    </script>
-
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-25948742-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
 
 
 </head>
 
 <body ng-app="buildingColorApp">
-
-<div class="header-wrap">
-
-
-    <div id="header">
-        <a id="home-link" href="http://www.ecorend.co.uk/" title="Ecorend homepage"></a>
-
-        <div id="la-roc">La Roc</div>
-        <!--<ul id="top-nav">
-          <li class="phone">Call us on: 0845 5194 779</li>
-
-
-        </ul>-->
-        <div class="megadropdown">
-            <ul>
-                <li class="">
-                    <a href="http://www.ecorend.co.uk/">Home</a>
-                </li>
-                <li class="hasSubNav current"><a href="http://www.ecorend.co.uk/products.html">Products</a>
-
-                    <div class="subNav fourCol">
-                        <!-- col -->
-                        <div class="col"><a href="http://www.ecorend.co.uk/products.html" title="Products">
-                            <h3>Products</h3>
-                        </a>
-                            <ul>
-                                <li><a href="./Primers & Adhesives_files/Primers & Adhesives.html"
-                                       title="Primers &amp; Adhesives">Primers &amp; Adhesives</a></li>
-                                <li><a href="http://www.ecorend.co.uk/products/base-coats.html" title="Base Coats">Base
-                                    Coats</a></li>
-                                <li><a href="http://www.ecorend.co.uk/products/through-coloured-finishes.html"
-                                       title="Through Coloured Finishes">Through Coloured Finishes</a></li>
-                                <li><a href="http://www.ecorend.co.uk/products/masonry-paint-and-textured-coatings.html"
-                                       title="Masonry Paint &amp; Textured Coatings">Masonry Paint &amp; Textured
-                                    Coatings</a></li>
-                            </ul>
-                        </div>
-                        <!-- .col -->
-                        <!-- col -->
-                        <div class="col"><a href="http://www.ecorend.co.uk/retro-therm.html" title="Retro-Therm">
-                            <h3>Retro-Therm</h3>
-                        </a>
-                            <ul>
-                                <li><a href="http://www.ecorend.co.uk/retro-therm/why-insulate-externally.html">Why
-                                    Insulate Externally?</a></li>
-                                <li>
-                                    <a href="http://www.ecorend.co.uk/retro-therm/what-is-involved-in-the-installation-process.html">What
-                                        is Involved in the Installation Process?</a></li>
-                            </ul>
-                        </div>
-                        <!-- .col -->
-
-                    </div>
-                    <!-- .subNav -->
-                </li>
-                <li class="hasSubNav"><a href="http://www.ecorend.co.uk/about-us.html">About Us</a>
-
-                    <div class="subNav oneCol">
-                        <ul>
-                            <li><a href="http://www.ecorend.co.uk/about-us.html">About Us</a></li>
-                            <li><a href="http://www.ecorend.co.uk/about-us/research-development.html">Research &amp;
-                                Development</a></li>
-                            <li><a href="http://www.ecorend.co.uk/about-us/storage-distribution.html">Storage &amp;
-                                Distribution</a></li>
-                            <li><a href="http://www.ecorend.co.uk/about-us/manufacturing.html">Manufacturing</a></li>
-                            <li><a href="http://www.ecorend.co.uk/about-us/quality.html">Quality</a></li>
-                            <li><a href="http://www.ecorend.co.uk/about-us/environmental.html">Environmental</a></li>
-                            <li><a href="http://www.ecorend.co.uk/about-us/service-support.html">Service &amp;
-                                Support</a></li>
-                        </ul>
-                    </div>
-                    <!-- .subNav -->
-                </li>
-                <li class="hasSubNav"><a href="http://www.ecorend.co.uk/news.html">News</a>
-
-                    <div class="subNav oneCol">
-                        <ul>
-                            <li><a href="http://www.ecorend.co.uk/news/ecotek.html">World’s First All Weather
-                                Application KR Render</a></li>
-                            <li><a href="http://www.ecorend.co.uk/news/development-of-porotherm-parge-coat.html">Development
-                                of Porotherm Parge Coat</a></li>
-
-                        </ul>
-                    </div>
-                    <!-- .subNav -->
-                </li>
-
-                <li class=""><a href="http://www.ecorend.co.uk/architects-specifiers.html">Architects &amp;
-                    Specifiers</a>
-                    <!--<div class="subNav oneCol">
-                        <ul>
-                          <li><a href="architects-specifiers.html">Architects &amp; Specifiers </a></li>
-                          <li><a href="63.html">NBS Plus Benefits to Specifier</a></li>
-                          <li><a href="64.html">CPD at RIBA</a></li>
-                        </ul>
-                      </div>-->
-                    <!-- .subNav -->
-                </li>
-                <li class="">
-                    <a href="http://www.ecorend.co.uk/contact-us.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-        <!-- .megadropdown -->
-
-    </div>
-</div>
 <div class="content-wrap">
     <div id="content" class="clearfix">
         <div class="container" ng-controller="MainCtrl">
             <div class="sixteen columns">
                 <h1 class="remove-bottom" style="margin-top: 40px">External Finish Picker</h1>
             </div>
-            <div class="six columns offset-by-one">
-                <div class="three columns alpha">
-                    <strong>Render color</strong>
-                    <ul class="render-items">
-                        <li class="render-colour" ng-click="choseColor(color)"
-                            ng-style="{background: color.background}" ng-repeat="color in colors"></li>
-                    </ul>
+            <div class="six columns">
+                <div class="toolbar" ng-init="type='render'">
+                    <span class=" space-right">Finish type:</span>
+
+                    <div class="toggle toggle-left" ng-click="type='render'" ng-class="{selected: type=='render'}">Render</div><!--
+                    --><div class="toggle toggle-right" ng-click="type='dash'" ng-class="{selected: type=='dash'}">Pebble Dash</div>
                 </div>
-                <div class="three columns omega">
-                    <strong>Render finish</strong>
-                    <ul class="render-items">
-                        <li class="render-finish" ng-click="choseTexture(texture)"
-                            ng-style="{'background-image': 'url(\'images/' + texture.file + '.jpg\')'}"
-                            ng-repeat="texture in textures"></li>
-                    </ul>
-                </div>
+                <div>
+                    <div class="render-colour" ng-class="{selected: color.selected}" ng-click="choseColor(color)"
+                         ng-style="{background: color.background}" ng-repeat="color in colors"></div>
+                    <div style="width: 210px; position: relative; top: -31px; display: inline-block;">
+                        <div class="slider-container">
+                            <div class="heading">Time of Day</div>
+                            <div class="icon sun">am</div>
+                            <div class="slider-wrapper">
+                                <slider floor="8" ceiling="12" step="0.01" precision="2" ng-model="value"></slider>
 
-                <div class="six columns alpha">
-                    <strong>Preview</strong>
-
-                    <div class="six columns alpha">
-
-                        <div class="three columns alpha">
-                            <div class="space-bottom"
-                                 ng-style="{height: '100px', opacity: 1, 'background-color': currentColor.background}">
-                                <div ng-style="{height: '100%', 'background-size': 'cover',
-                                    opacity: 0.3, 'background-image': 'url(\'images/' + currentTexture.file + '.jpg\')'}">
-
-                                </div>
+                                <!--<input ng-model="value" type="text" id="mySlider1" slider options="options"/>-->
                             </div>
-                            <div class="info">
-                                Color: {{currentColor.name}}
-                                <br/>
-                                Finish: {{currentTexture.name}}
-                            </div>
+                            <div class="icon moon">pm</div>
                         </div>
-                        <div class="three columns omega">
-                            <form class="enquiry-form">
-                                <label for="name">Name</label>
-                                <input type="text" class="remove-bottom" id="name">
-                                <label for="telephone">Telephone</label>
-                                <input type="tel" class="remove-bottom" id="telephone">
-                                <label for="email">Email</label>
-                                <input type="email" class="space-bottom" id="email">
-
-                                <div class="clearfix space-bottom">
-                                    <label class="left space-right" for="regularRadio">
-                                        <input type="radio" name="radios" checked id="regularRadio" value="commercial">
-                                        <span>Commercial</span>
-                                    </label>
-                                    <label class="left" for="secondRegularRadio">
-                                        <input type="radio" name="radios" id="secondRegularRadio" value="domestic">
-                                        <span>Domestic</span>
-                                    </label>
-                                </div>
-                                <input class="space-bottom" type="hidden" name="finish" value="{{currentTexture.name}}">
-                                <input type="hidden" name="color" value="{{currentColor.name}}">
-                                <button type="submit" class="btn">Send enquiry</button>
-                            </form>
-                        </div>
-
                     </div>
-
-                </div>
-                <div class="six columns alpha hide-small">
-
                 </div>
             </div>
-            <div class="eight columns">
+            <div class="ten columns">
+<div class="toolbar">Colour Ref: <span style="font-weight: bold">{{currentColor.name}}</span></div>
+                <!--<div class="images">-->
+                <!--<div ng-repeat="image in images" ng-click="choseImage(image)" class="{{image.selected}}"-->
+                <!--style="background-image: url('images/{{image.name}}')"></div>-->
+                <!--</div>-->
 
-                <div class="images">
-                    <div ng-repeat="image in images" ng-click="choseImage(image)" class="{{image.selected}}"
-                         style="background-image: url('images/{{image.name}}')"></div>
-                </div>
                 <div class="photo">
                     <img src="images/{{currentImage.name}}" alt="1"/>
 
+                    <div class="time-of-day-overlay" style="background-color: #0c2040; opacity: {{am}}"></div>
+                    <div class="time-of-day-overlay" style="background-color: #8f5257; opacity: {{pm}}"></div>
                     <div class="svg-container">
                         <object>
                             <svg x="0px" y="0px" style="" vbox="0 0 {{currentImage.width}} {{currentImage.height}}">
-                                <defs>
-                                    <pattern id="thin" x="0" y="0" patternUnits="userSpaceOnUse" height="100" width="100">
-                                        <image x="0" y="0" xlink:href="images/thin.jpg" width="1000" height="667"></image>
-                                    </pattern>
-                                    <pattern id="mineral" x="0" y="0" patternUnits="userSpaceOnUse" height="100" width="100">
-                                        <image x="0" y="0" xlink:href="images/mineral.jpg" width="1000" height="667"></image>
-                                    </pattern>
-                                    <pattern id="monocouche" x="0" y="0" patternUnits="userSpaceOnUse" height="100" width="100">
-                                        <image x="0" y="0" xlink:href="images/monocouche.jpg" width="100" height="100"></image>
-                                    </pattern>
-                                </defs>
-                                <path opacity="0.8" ng-attr-fill="url(#{{currentTexture.file}})"
+                                <path opacity="0.7" ng-attr-fill="{{currentColor.background}}"
                                       ng-attr-d="{{currentImage.overlayPath}}"/>
-
-                                <path opacity="0.7" ng-attr-fill="{{currentColor.code}}"
-                                      ng-attr-d="{{currentImage.overlayPath}}"/>
-
                             </svg>
-
                         </object>
                     </div>
                 </div>
+                <ul id="carousel" class="elastislide-list">
+                    <li ng-repeat="image in images"><a href="" ng-click="choseImage(image)" class="image"
+                                                       style="background-image: url('images/{{image.name}}')"><img
+                            style="width: 100px; height: 100px; visibility: hidden" src="images/{{image.name}}"
+                            alt="image01"/></a></li>
+                </ul>
 
             </div>
 
         </div>
         <!--</div>-->
     </div>
-    <div id="footer">
-        <ul>
-            <li><a href="http://www.ecorend.co.uk/" title="">Home</a></li>
-            <li><a href="http://www.ecorend.co.uk/products.html" title="Products">Products</a></li>
-            <li><a href="http://www.ecorend.co.uk/about-us.html" title="About Us">About Us</a></li>
-            <li><a href="http://www.ecorend.co.uk/news.html" title="News">News</a></li>
-            <li><a href="http://www.ecorend.co.uk/architects-specifiers.html" title="Architects &amp; Specifiers">Architects
-                &amp; Specifiers</a></li>
-            <li><a href="http://www.ecorend.co.uk/contact-us.html" title="Contact Us">Contact Us</a></li>
-        </ul>
-        <p>© La Roc Building Solutions Ltd 2011. All rights reserved.<br>Website by <a
-                href="http://www.themediaworks.com/" title="The Media Works" target="_blank">The Media Works</a></p>
-        <!--<a href="#" target="_blank"" title="Wetherby Group of Companies" class="weth-group"></a><a href="#" target="_blank"" title="La Roc" class="la-roc"></a><a href="#" target="_blank"" title="UKAS" class="ukas"></a><a href="#" target="_blank"" title="BBA" class="bba"></a>-->
-    </div>
 </div>
 
-
-<!--<script>
-  /* IE only */
-  DD_roundies.addRule('#submit', '10px');
- DD_roundies.addRule('.megadropdown li.current,  .megadropdown li:hover', '10px');
- DD_roundies.addRule('.subNav', '10px');
-</script>-->
-
-
-<div id="fancybox-tmp"></div>
-<div id="fancybox-loading">
-    <div></div>
-</div>
-<div id="fancybox-overlay"></div>
-<div id="fancybox-wrap">
-    <div id="fancybox-outer">
-        <div class="fancy-bg" id="fancy-bg-n"></div>
-        <div class="fancy-bg" id="fancy-bg-ne"></div>
-        <div class="fancy-bg" id="fancy-bg-e"></div>
-        <div class="fancy-bg" id="fancy-bg-se"></div>
-        <div class="fancy-bg" id="fancy-bg-s"></div>
-        <div class="fancy-bg" id="fancy-bg-sw"></div>
-        <div class="fancy-bg" id="fancy-bg-w"></div>
-        <div class="fancy-bg" id="fancy-bg-nw"></div>
-        <div id="fancybox-inner"></div>
-        <a id="fancybox-close"></a><a href="javascript:;" id="fancybox-left"><span class="fancy-ico"
-                                                                                   id="fancybox-left-ico"></span></a><a
-            href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div>
-</div>
 </body>
 </html>
