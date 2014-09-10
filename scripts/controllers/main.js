@@ -2,6 +2,7 @@
 
 angular.module('buildingColorApp', [ 'uiSlider'])
     .controller('MainCtrl', function ($scope, $timeout, $http) {
+        $scope.type = 'render';
         $scope.colors = [
             { id: 1,  name: 'White',          background:'#ffffff', code: 'hsl(49, 31%, 86%)'},
             { id: 2,  name: 'Off White  (WH89)',          background:'#fcf8ee', code: 'hsl(60, 23%, 89%)'},
@@ -16,6 +17,16 @@ angular.module('buildingColorApp', [ 'uiSlider'])
             { id: 11, name: 'Buttermilk (LY78)',             background:'#f3e3b4', code: 'hsl(86, 28%, 72%)'},
             { id: 12, name: 'Pale Stone Red (SR55)',             background:'#efc1b4', code: 'hsl(45, 3%, 74%)'},
             { id: 13, name: 'Light Cream (WH78)',          background:'#f4ece7', code: 'hsl(28, 7%, 61%)'}
+        ];
+        $scope.pebbleDashes = [
+            {id: 1, name: 'Yellow', previewImage: 'yellow.png', houseImage: '2-Finished-House.jpg'},
+            {id: 2, name: 'Classic Spar', previewImage: 'classic-spar.png', houseImage: 'DSCF1424-all-dash.jpg'},
+            {id: 3, name: 'Honey', previewImage: 'honey.png', houseImage: 'Main-Road-After.jpg'},
+            {id: 4, name: 'Barley Corn', previewImage: 'barley-corn.png', houseImage: 'Penywaun--BISF.jpg'},
+            {id: 1, name: 'Black & White', previewImage: 'black-and-white.png', houseImage: 'Newark-After.jpg'},
+            {id: 1, name: 'Snow Drop', previewImage: 'snow-drop.png', houseImage: 'SERS-Malpass-(4).jpg'},
+//            {id: 1, name: 'Polar White', previewImage: 'polar-white.png', houseImage: ''},
+//            {id: 1, name: 'Red & White', previewImage: 'red-and-white.png', houseImage: ''}
         ];
         $scope.options = {
             from: 9,
@@ -42,6 +53,7 @@ angular.module('buildingColorApp', [ 'uiSlider'])
             $scope.choseColor( $scope.colors[0]);
             $scope.currentImage = $scope.images[0];
             $scope.currentImage.selected = 'selected';
+            $scope.choseDash($scope.pebbleDashes[0]);
             $timeout(function(){
                 var car = $( '#carousel' );
                 car.elastislide();
@@ -50,8 +62,12 @@ angular.module('buildingColorApp', [ 'uiSlider'])
         });
 
 
-        $scope.choseTexture = function (texture) {
-            $scope.currentTexture = texture;
+        $scope.choseDash = function (dash) {
+            $scope.pebbleDashes.forEach(function(item){
+                item.selected = false;
+            });
+            dash.selected = true;
+            $scope.currentDash = dash;
         };
         $scope.choseColor = function (color) {
             for(var i = 0; i < $scope.colors.length; i++){
